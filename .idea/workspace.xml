@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f12b91ba-fc58-4163-8674-200bcb06299c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/sync-gitlab.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java0803_2/src/com/swea/Solution_배틀필드.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java0803_2/src/com/boj/Main_11659.java" beforeDir="false" afterPath="$PROJECT_DIR$/java0803_2/src/com/boj/Main_11659.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java0803_2/src/com/boj/Main_11660.java" beforeDir="false" afterPath="$PROJECT_DIR$/java0803_2/src/com/boj/Main_11660.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
