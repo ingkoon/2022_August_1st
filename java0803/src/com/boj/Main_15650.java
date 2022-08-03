@@ -42,7 +42,7 @@ public class Main_15650 {
 			result[cnt] = nums[i];
 			calc(cnt+1);
 			result[cnt] = 0;
-//			visited[i] = false;
+			visited[i] = false;
 		}
 	}
 }
