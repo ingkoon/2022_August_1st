@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class Main_2798 {
 	
 	static int n, m;
+	
 	static int[] cards;
+	
+	static int max;
 	
 	public static void main(String[] args){
 		
@@ -16,17 +19,20 @@ public class Main_2798 {
 		for (int i = 0; i < n; i++) cards[i] = sc.nextInt();
 		
 		
-		int result = 0;
-		
-		for (int i = 0; i < n; i++) {		
-			for (int j = i+1; j < n; j++) {
-				for (int k = j+1; k <n; k++) {
-					int tmp = cards[i] + cards[j] + cards[k];
-					if(result< tmp && tmp <= m)
-						result = tmp;
-				}
-			}			
+		max = -1;
+		ncr(0,0,0);
+		System.out.println(max);	
+	}
+	private static void ncr(int start, int cnt, int tot) {
+		if(cnt == 3) {
+			if(tot<=m) {
+				max = Math.max(tot, max);
+			}
+			return;			
 		}
-		System.out.println(result);	
+		for (int i = start; i < n; i++) {
+			ncr(i+1, cnt + 1, tot+cards[i]);
+		} 
+		
 	}
 }
