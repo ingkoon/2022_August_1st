@@ -27,14 +27,14 @@ public class Solution_2819 {
             }
             for (int i = 0; i < SIZE; i++) {
                 for (int j = 0; j < SIZE; j++) {
-                    dfs(1, i, j, "");
+                    dfs( i, j, "");
                 }
             }
             System.out.printf("#%d %d\n",t , hashSet.size());
         }
     }
 
-    static void dfs(int cnt, int x, int y, String val){
+    static void dfs(int x, int y, String val){
         if(val.length()==7) {
             hashSet.add(val);
             return;
@@ -46,8 +46,7 @@ public class Solution_2819 {
             int nx = x + dr[i];
             int ny = y + dc[i];
             if(nx >= 0 && nx < SIZE && ny >= 0 && ny < SIZE){
-                cnt+=1;
-                dfs(cnt, nx, ny, val);
+                dfs( nx, ny, val);
             }
         }
   }
