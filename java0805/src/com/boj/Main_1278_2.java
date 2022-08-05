@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main_1278 {
+public class Main_1278_2 {
     static int n, m;
     static int[][] visited;
     static int[][] maze;
@@ -38,7 +38,6 @@ public class Main_1278 {
         for (int i = 0; i < n; i++) {
             String s = bf.readLine();
             char[] cs = s.toCharArray();
-            st = new StringTokenizer(bf.readLine());
             for (int j = 0; j < m; j++) {
                 maze[i][j] = cs[j] - '0';
             }
@@ -58,6 +57,7 @@ public class Main_1278 {
             int r = cur.r;
             int c = cur.c;
             if(r == n-1 && c == m-1) return; //마지막 지점 체크
+
             for (int d = 0; d< 4; d++){
                 int nr = r + dr[d];
                 int nc = c + dc[d];
@@ -71,6 +71,6 @@ public class Main_1278 {
     }
 
     private static boolean check(int r, int c) {
-        return r >= 0 && r < n && c >= 0 && c < n;
+        return r >= 0 && r < n && c >= 0 && c < m;
     }
 }
