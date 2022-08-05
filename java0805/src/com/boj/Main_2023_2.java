@@ -4,17 +4,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main_2023 {
+public class Main_2023_2 {
     public static StringBuilder sb = new StringBuilder();
     public static void main(String[] args) throws IOException {
-        long start = System.currentTimeMillis();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         getResult(0,n);
         System.out.println(sb);
-        long end = System.currentTimeMillis();
-
-        System.out.println("시간: " + (end-start)/1000.0 + "초");
     }
 
     public static void getResult(int output, int n) {
